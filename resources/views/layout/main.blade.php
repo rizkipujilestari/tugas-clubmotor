@@ -29,7 +29,7 @@
             <a href="{{ url('/gallery') }}"><span class="fa fa-photo"></span> Gallery Photo</a>
           </li>
           <li>
-            <a href="{{ url('/members') }}"><span class="fa fa-user"></span> Klien Kami</a>
+            <a href="{{ url('/clients') }}"><span class="fa fa-user"></span> Klien Kami</a>
           </li>
           <li>
             <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle"> 
