@@ -3,11 +3,16 @@
 @section('container-main')
     <div class="p-4">
         <h2 class="mb-4">About Us</h2>
-        <p>
-            Kami adalah klub Motor yang menjunjung tinggi nilai persaudaraan sebagai jalan hidup, tanpa membedakan suku, ras, agama <br>
-            dan bangsa dengan tujuan utama untuk kemanusiaan. Berawal dari sekumpulan manusia yang mencintai dan menggunakan <br>
+        <div class="row">
+          <div class="col-8">
+            Kami adalah klub Motor yang menjunjung tinggi nilai persaudaraan sebagai jalan hidup, tanpa membedakan suku, ras, agama 
+            dan bangsa dengan tujuan utama untuk kemanusiaan. Berawal dari sekumpulan manusia yang mencintai dan menggunakan
             motor Yamaha Mio sehingga menjadi ciri khas klub Motor ini. Didirikan di Bandung pada 1 Juni 2020.
-        </p>
+          </div>
+          <div class="col-4">
+            <img src="{{asset('img/mio-riders-logo.png')}}" alt="Mio Riders" width="100%" style="border-radius: 10px">
+          </div>
+        </div>
     </div>
     <div class="p-4">
         <h2 class="mb-4">Hukum Persaudaraan</h2>
