@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\ArticleController;
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\EventController;
 use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\ClientController;
@@ -50,3 +51,7 @@ Route::get('/articles', [ArticleController::class, 'index']);
 
 // 11. Event, Kumpulan kegiatan perusahaan 
 Route::get('/events', [EventController::class, 'index']);
+
+// tambahan halaman login dan register
+Route::get('/sign-in', [AuthController::class, 'index']);
+Route::get('/sign-up', [AuthController::class, 'create']);

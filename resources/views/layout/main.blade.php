@@ -36,10 +36,10 @@
               <span class="fa fa-sign-in"></span> Login</a>
             <ul class="collapse list-unstyled" id="pageSubmenu">
               <li>
-                  <a href="#">Sign In</a>
+                  <a href="{{ url('/sign-in') }}">Sign In</a>
               </li>
               <li>
-                  <a href="#">Sign Up</a>
+                  <a href="{{ url('/sign-up') }}">Sign Up</a>
               </li>
             </ul>
           </li>
