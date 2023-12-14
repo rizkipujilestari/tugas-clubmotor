@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
 
 class ProfileController extends Controller
 {
@@ -51,6 +53,23 @@ class ProfileController extends Controller
         return view('contact_us');
     }
     
+    public function sendWa(Request $request)
+    {
+        $insert = DB::table('contact_message')->insert([
+            'name'    => $request->name,
+            'email'   => $request->email,
+            'subject' => $request->subject,
+            'message' => $request->message,
+            'created_at' => Carbon::now(),
+        ]);
+
+        if($insert === true) {
+            return redirect('/contact-us')->with('success', 'Successfully insert data!'); ;
+        } else {
+            return redirect('/contact-us')->withErrors(['msg' => 'Failed to insert data!']);
+        }
+    }
+
     /**
      * Show the form for creating a new resource.
      *

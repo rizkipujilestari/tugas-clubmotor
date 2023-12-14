@@ -55,3 +55,5 @@ Route::get('/events', [EventController::class, 'index']);
 // tambahan halaman login dan register
 Route::get('/sign-in', [AuthController::class, 'index']);
 Route::get('/sign-up', [AuthController::class, 'create']);
+
+Route::post('/sendWa', [ProfileController::class, 'sendWa']);

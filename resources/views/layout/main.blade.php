@@ -99,16 +99,38 @@
       </div>
 		</div>
 
-    <footer class="bg-warning text-light p-4">
-      <div class="container">
+    <footer class="bg-navy text-light p-4">
+      <div class="container-fluid pt-4">
         <div class="row">
-          <div class="col-8">
-            <p>
-              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
-            </p>
+          <div class="col-9">
+            <div class="row">
+              <div class="col-md-3 text-center">
+                  <i class="fa fa-map fa-2x"></i>
+                  <p>Jl. Kebon Kangkung 13 No. 10 Kiaracondong, Kota Bandung</p>
+              </div>
+              <div class="col-md-3 text-center">
+                  <i class="fa fa-phone mt-4 fa-2x"></i>
+                  <p>+62 813 2228 6797</p>
+              </div>
+              <div class="col-md-3 text-center">
+                  <i class="fa fa-fax mt-4 fa-2x"></i>
+                  <p>+62 261 206 009</p>
+              </div>
+              <div class="col-md-3 text-center">
+                  <i class="fa fa-envelope mt-4 fa-2x"></i>
+                  <p>mioridersbandung@gmail.com</p>
+              </div>
+           </div>
+           <p class="row">
+            Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank"> Colorlib.com</a>
+          </p>
           </div>
-          <div class="col-4">
-
+          <div class="col-3">
+            <div style="max-width:100%;overflow:hidden;color:red;width:380px;height:200px;">
+              <div id="embed-map-canvas" style="height:100%; width:100%;max-width:100%;">
+                <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/place?q=Kiaracondong,+Bandung+City,+West+Java,+Indonesia&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </div>

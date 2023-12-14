@@ -27,7 +27,27 @@
     <hr>
 
     <h2>Kirim Pesan</h2>
-    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+    <div class="col-12 p-2">
+        @if (\Session::has('success'))
+            <div class="alert alert-success" id="alert">
+                {!! \Session::get('success') !!} 
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        @endif
+        @if($errors->any())
+            <div class="alert alert-danger" id="alert">
+                {{$errors->first()}}
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+        @endif
+    </div>
+
+    <form id="contact-form" name="contact-form" action="{{ url('/sendWa') }}" method="POST">
+        {{ csrf_field() }}
         <!--Grid row-->
         <div class="row">
 
