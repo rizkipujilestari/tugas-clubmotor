@@ -15,7 +15,7 @@
   <body>
 		
 		<div class="wrapper d-flex align-items-stretch">
-			<nav id="sidebar" class="bg-navy">
+			<nav id="sidebar" class="bg-navy" style="margin-top: 50px; padding-top:20px;">
 				<h1><a href="" class="logo"><img src="{{ asset('img/mio-riders-logo.png') }}" alt="Mio Riders" width="100%"></a></h1>
         <ul class="list-unstyled components mb-5">
           <li>
@@ -47,24 +47,13 @@
           </li>
 
         </ul>
-
-        <div class="footer">
-        	<p>
-					  Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
-					</p>
-        </div>
     	</nav>
 
         <!-- Page Content  -->
       <div id="content" class="">
-
-        <div class="container-fluid text-center bg-warning p-2">
-          <h3 class="text-navy font-italic font-weight-bolder">MIO RIDERS BANDUNG CITY</h3> 
-        </div>
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-warning">
-          <div class="container-fluid">
-
+        <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-warning">
+          <div class="container-fluid">            
+            
             <button type="button" id="sidebarCollapse" class="btn btn-warning">
               <i class="fa fa-bars"></i>
               <span class="sr-only">Toggle Menu</span>
@@ -72,7 +61,6 @@
             <button class="btn btn-warning d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <i class="fa fa-bars"></i>
             </button>
-
 
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
               <ul class="nav navbar-nav mr-auto">
@@ -95,16 +83,36 @@
                     <a class="nav-link" href="{{ url('/about-us') }}">About Us</a>
                 </li>
               </ul>
+
+              
+              <div class="offset-2 text-center bg-warning">
+                <h4 class="text-navy font-italic font-weight-bolder">MIO RIDERS BANDUNG CITY</h4> 
+              </div>
             </div>
           </div>
         </nav>
 
-        <div class="container p-2">
+        <div class="container" style="padding-top: 6rem; padding-bottom: 6rem;">
             @yield('container-main')
         </div>
 
       </div>
 		</div>
+
+    <footer class="bg-warning text-light p-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-8">
+            <p>
+              Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+            </p>
+          </div>
+          <div class="col-4">
+
+          </div>
+        </div>
+      </div>
+    </footer>
 
     <script src="{{asset('js/jquery.min.js')}}"></script>
     <script src="{{asset('js/popper.js')}}"></script>
